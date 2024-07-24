@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+.img-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+
+body {
+    align-items: center;
+    background-color: #0d3c66;
+}
+
+.entirebackground {
+    background-image: url(../images/Form-Entry-BG-NoText.jpg);
+    background-position: top center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: contain;
+    /* Resize the background image to cover the entire container */
+}
+
+.CardArrange {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.CardArrange>div {
+    margin-top: 0;
+}
+
+.headlogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.Title_image {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.A {
+    color: white;
+    font-family: 'GB';
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+.selection {
+    margin-top: 40px !important;
+    text-align: center;
+}
+
+#PersonalTitle {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 260px;
+    height: 81px;
+    font-size: 40px;
+    font-family: "GB";
+    color: rgb(17, 67, 123);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: left 2rem center;
+    background-size: .8em;
+    padding-right: 20px;
+
+
+}
+
+#PersonalTitle option {
+    font-size: 40px;
+    font-family: "GB";
+    color: rgb(17, 67, 123);
+
+    line-height: 0.675;
+
+}
+
+
+.namearea {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 554px;
+    height: 81px;
+    margin-right: 20px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'GB';
+    color: rgb(17, 67, 123);
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+textarea:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+select:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+option:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.table_class {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+li {
+    display: table-cell;
+}
+
+input[type="radio"][id^="cb"] {
+    display: none;
+}
+
+label {
+    border: 1px solid rgb(200, 200, 200);
+    background-color: white;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+label:hover {
+    border-color: rgb(0, 168, 134);
+    background-color: rgb(0, 168, 134);
+}
+
+label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+}
+
+label img {
+    height: 165px;
+    width: 165px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+
+:checked+label {
+    border-color: rgb(0, 168, 134);
+    background: rgb(0, 168, 134);
+}
+
+
+
+:checked+label img {
+
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.download-row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 0 20px 0;
+
+}
+
+
+
+.downloadBTN {
+    width: 841px;
+    height: 90px;
+    padding: 10px 40px;
+    font-family: "GB" !important;
+    font-size: 48px;
+    color: white;
+    border-radius: 10px !important;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    transition: 0.4s;
+    background-color: #2478be;
+}
+
+.downloadBTN:disabled,
+.downloadBTN:disabled:hover {
+    background-color: #2478be;
+    cursor: not-allowed;
+}
+
+.downloadBTN:hover {
+    transition: 0.4s;
+    background-color: #1a5eaa;
+}
+
+
+
+
+@media only screen and (max-width: 395px) {
+    .CardArrange {
+        height: 85%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .CardArrange {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    .img-row {
+        align-content: center;
+        align-items: center;
+    }
+
+    label {
+        width: 28vw;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+
+    #cb2 {
+        width: 25%;
+    }
+
+    .img-row>img {
+        width: 100%;
+    }
+
+
+    .center {
+        width: 90vw;
+        height: 70vh;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0.8vh auto;
+    }
+
+
+
+    .phonescreen {
+        width: 35vh;
+    }
+
+    .logo {
+        max-width: 35vh;
+
+    }
+
+    .headlogo {
+        margin-top: 0px;
+    }
+
+    .Title_image {
+        margin-top: 20px;
+    }
+
+    .A {
+        font-size: 1.3rem;
+        margin: 10px 0 0 0;
+    }
+
+
+    #PersonalTitle option {
+        font-size: 16px;
+        font-family: "GB";
+        color: rgb(17, 67, 123);
+
+    }
+
+    #PersonalTitle {
+        width: 60px;
+        height: 31px;
+        font-size: 16px;
+        font-family: "GB";
+        color: rgb(17, 67, 123);
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url(../images/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: left .3rem center;
+        padding: 0 5px;
+        background-size: .7em;
+    }
+
+
+    .namearea {
+        width: 280px;
+        height: 31px;
+        margin-right: 20px;
+        font-size: 20px;
+        margin-right: 5px;
+
+    }
+
+    .info {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .table_class {
+        margin-top: 10px;
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center
+    }
+
+    ul {
+        list-style-type: none;
+        padding-block-start: 0;
+        margin-block-start: 0px;
+        margin-inline-start: 0px;
+        padding-inline-start: 0px;
+    }
+
+    label img {
+        height: 30vw;
+        width: 20vw;
+        transition-duration: 0.2s;
+        transform-origin: 50% 50%;
+    }
+
+    .downloadBTN {
+        text-align: center;
+        width: 280px;
+        height: 41px;
+
+        font-size: 20px;
+
+    }
+
+    label {
+        border: 1px solid rgb(200, 200, 200);
+        background-color: #11437b;
+        padding: 10px;
+        display: block;
+        position: relative;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: 0.4s;
+    }
+
+    label img {
+        height: 100%;
+        width: 100%;
+        transition-duration: 0.2s;
+        transform-origin: 50% 50%;
+    }
+
+    /* 
+
+
+   5 columns grid for 'md' and 'lg' screens
+
+   @tatygrassini
+
+
+*/
+
+}

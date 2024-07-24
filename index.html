@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="Ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/animate.min.css">
+</head>
+
+<body>
+    <div class="center animate__animated animate__zoomIn animate__slower entirebackground" style="height: 100vh
+    ;">
+
+
+
+        <div class="CardArrange">
+            <div style="text-align: center; font-size: 4rem; font-family: GB; color: #fff;">
+                مُبارك عليكم
+            </div>
+            <div style="text-align: center; font-size: 4rem; font-family: GB; color: #5fbaff
+            ;">
+                الشهر الفضيل
+            </div>
+            <div class="info">
+                <div class="selection">
+                    <select id="PersonalTitle" onchange="detectChange(this)">
+                        <option value="اخوكم">اخوكم</option>
+                        <option value="اختكم">اختكم</option>
+                    </select>
+                    <input type="text" id="uName" class="namearea" autocomplete="off">
+                </div>
+            </div>
+            <div class="img-row table_class animate__animated animate__fadeIn" id="choose_content">
+                <div>
+                    <input type="radio" name="template_cbs" id="cb2" />
+                    <label for="cb2"><img src="./images/RamdanBG_1.png" /></label>
+                </div>
+
+                <div>
+                    <input type="radio" name="template_cbs" id="cb3" />
+                    <label for="cb3"><img src="./images/RamdanBG_2.png" /></label>
+                </div>
+            </div>
+            <div>
+                <div class="download-row table_class animate__animated animate__fadeIn" id="choose_content">
+                    <button type="submit" disabled class="downloadBTN" id="downloadLNK" onclick="downloadImg()"
+                        download="">تحميل</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./style/js/image_script_download.js"></script>
+
+</body>
+
+</html>
